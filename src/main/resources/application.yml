@@ -1,4 +1,8 @@
 #MySQL 세팅
+
+#server:
+#  port: 8081
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -17,5 +21,8 @@ spring:
         show_sql: true
         format_sql: true
 
-#server:
-#  port: 8081
+
+kakao:
+  rest:
+    api:
+      key: ${KAKAO_REST_API_KEY}
